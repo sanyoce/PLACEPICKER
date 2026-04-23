@@ -1,0 +1,163 @@
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1b2f;
+  padding: 0px 200px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e6e9ff;
+  padding-bottom: 50px;
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: wheat;
+  width: 500px;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.modalText h1{
+  color: #ff5c7a;
+}
+
+.modalText p{
+  padding-left: 20px;
+  color: #ff5c7a;
+}
+
+.modalBtns{
+  justify-self: flex-end;
+}
+
+.modalBtn{
+  border: none;
+  margin: 0px;
+  padding: 10px 20px;
+  background-color: wheat;
+  color: #ff5c7a;
+  font-size: 20px;
+}
+
+.modalBtnRed{
+  border: none;
+  margin: 0px;
+  padding: 10px 20px;
+  background-color: #ff5c7a;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+}
+
+.modalProgressBar{
+  justify-self: flex-start;
+  width: 60%;
+  height: 10px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.progress{
+  height: 100%;
+  background-color: aqua;
+  transition: width 1s linear;
+}
+
+.headerLogo img{
+  width: 300px;
+  margin-bottom: -100px;
+}
+
+.headerName{
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.HeaderDescription p{
+  margin: 0px;
+  font-size: 20px;
+  color: #9aa3c0;
+}
+
+.cardBlockWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cardBlock{
+  border: 1px solid #00e0ff;
+  border-radius: 12px;
+  padding: 50px;
+}
+
+.cardBlockHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e6e9ff;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f2238;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 10px;
+  border: 1px solid #010101;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid aqua ;
+}
+
+.card h1{
+  margin: 0px;
+  color: white;
+  font-weight: 200;
+  font-size: 26px;
+}
+
+.card img{
+  width: 80%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.defaultBase{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
